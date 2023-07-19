@@ -8,9 +8,12 @@
   font-family: "Work Sans", sans-serif;
 }
 
+body {
+  max-width: 1440px;
+}
+
 /* header section */
 nav {
-  max-width: 1440px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
   height: 130px;
@@ -61,6 +64,17 @@ nav {
   display: inline-block;
   margin-left: 20px;
 }
+
+.menu-container p {
+  color: #3c354f;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
 #button-follow {
   display: flex;
   justify-content: center;
@@ -73,6 +87,112 @@ nav {
   background: rgba(11, 2, 35, 0.1);
 }
 
+/* banner section style*/
+
+.banner {
+  background-color: #fff;
+  display: flex;
+  gap: 50px;
+  height: auto;
+  justify-content: space-between;
+}
+
+.banner-desc {
+  flex: content;
+  height: auto;
+  background-image: url("images/Group14.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  width: 50%;
+}
+
+.banner-element {
+  margin-top: 148px;
+  margin-left: 180px;
+}
+
+#banner-title h2 {
+  color: #0b0223;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+#banner-gradient {
+  font-size: 48px;
+}
+#banner-gradient h1 {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-item {
+  display: flex;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.banner-item p {
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+.banner-item img,
+p {
+  margin: 0;
+  font-size: 24px;
+  
+}
+
+.banner-button button {
+  font-size: 24px;
+  
+}
+
+.banner-imgs img {
+  width: 700px;
+}
+
+.banner-button #btn-1 {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+  border-style: none;
+  height: 40px;
+  width: 100px;
+}
+.banner-button #btn-2 {
+  color: #fff;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  border-radius: 40px;
+  background: #4ec5f7;
+  height: 40px;
+  width: 135px;
+  border-style: none;
+  margin-left: 10px;
+}
 
 /* Responsive for mobile device */
 
@@ -111,4 +231,32 @@ nav {
     margin: 0px;
     margin-bottom: 20px;
   }
+
+
+
+  .banner{
+    flex-direction: column-reverse;
+  }
+
+  .banner-imgs img{
+    width: 100%;
+  }
+
+  .banner-desc{
+    margin: 0px;
+    width: 100%;
+  }
+
+  .banner-element{
+    margin-left: 10px;
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .banner-button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
 }
