@@ -116,13 +116,14 @@ nav {
 #banner-title h2 {
   color: #0b0223;
   text-align: center;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 600;
   text-transform: uppercase;
+  
 }
 
-#banner-gradient {
-  font-size: 48px;
+#banner-gradient h1{
+  font-size: 80px;
 }
 #banner-gradient h1 {
   background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
@@ -152,12 +153,10 @@ nav {
 p {
   margin: 0;
   font-size: 24px;
-  
 }
 
 .banner-button button {
   font-size: 24px;
-  
 }
 
 .banner-imgs img {
@@ -192,6 +191,73 @@ p {
   width: 135px;
   border-style: none;
   margin-left: 10px;
+}
+
+/* main section */
+
+.videos {
+  margin-top: 100px;
+}
+
+.videos h2 {
+  color: #0b0223;
+  text-align: right;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.videos h2 .color-text {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Work Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.videos p {
+  color: #534c64;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 166.667% */
+  text-align: center;
+}
+
+.video-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.card {
+  width: 23%;
+}
+
+.card img{
+  width: 100%;
+}
+
+.card p {
+  color: #534c64;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px; 
+  text-align: left;
+  margin-top: 15px;
+  
 }
 
 /* Responsive for mobile device */
@@ -232,31 +298,87 @@ p {
     margin-bottom: 20px;
   }
 
-
-
-  .banner{
+  .banner {
     flex-direction: column-reverse;
   }
 
-  .banner-imgs img{
+  .banner-imgs img {
     width: 100%;
   }
 
-  .banner-desc{
+  .banner-desc {
     margin: 0px;
     width: 100%;
   }
 
-  .banner-element{
-    margin-left: 10px;
+  .banner-element {
+    
+    margin-left: 0px;
     margin-top: 50px;
     width: 100%;
   }
 
-  .banner-button{
+  .banner-element #banner-title h2{
+    font-size: 40px;
+  }
+
+  .banner-element #banner-gradient h1{
+    font-size: 45px;
+    text-align: center;
+    
+  }
+
+  .banner-element #banner-title{
+    width: 100%;
+  }
+
+
+  .banner-button {
     display: flex;
     justify-content: center;
     text-align: center;
   }
+
+  
+/* 1111111111111111 */
+
+.videos h2{
+  font-size: 23px;
+}
+
+.videos h2 .color-text{
+  font-size: 23px;
+}
+
+.videos p{
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+.video-card{
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+
+.card{
+  width: 100%;
+
+}
+.card img{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+
+}
+
+.card p{
+  text-align: center;
+}
+
 
 }
