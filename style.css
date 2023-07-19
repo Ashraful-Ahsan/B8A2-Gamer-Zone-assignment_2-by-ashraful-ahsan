@@ -1,11 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Clicker+Script&family=Work+Sans:wght@400;500;600;700;800&display=swap");
 
+/* shared style */
 * {
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
   font-family: "Work Sans", sans-serif;
 }
-header {
+
+
+/* header sevtion */
+nav {
   max-width: 1440px;
   background: #fff;
   box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
@@ -16,7 +21,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 115px;
+  
 }
 
 .nav-container {
@@ -93,4 +98,52 @@ nav {
 
 .button-icon li {
   margin-right: 20px;
+}
+
+
+/* Responsive for mobile device */
+
+
+@media (max-width: 576px) {
+
+    body{
+        background: #FFF;
+    }
+
+    nav {
+        flex-direction: column;
+        height: 300px;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+        
+       
+      }
+      
+      .nav-container{
+        margin-top: 40px;
+        margin-bottom: 15px;
+      }
+    
+    .menu-container  {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+        
+    }
+    .menu-container li.menu1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        margin-bottom: 20px;
+        
+    }
+    
+  
 }
