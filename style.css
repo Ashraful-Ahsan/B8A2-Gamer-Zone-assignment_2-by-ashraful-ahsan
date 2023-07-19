@@ -549,4 +549,11 @@ footer li {
   .play-img img {
     max-width: 70%; /* Scale down the parent image to fit the screen width */
   }
+
+
+
+  footer{
+    margin-top: 200px;
+    padding-top: 120px;
+  }
 }
