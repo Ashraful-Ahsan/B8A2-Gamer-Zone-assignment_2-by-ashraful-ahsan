@@ -236,12 +236,16 @@ p {
 .video-card {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content:space-between;
   margin-top: 40px;
+  margin-left: 170px;
+  margin-right: 170px;
+  
 }
 
 .card {
-  width: 23%;
+  width: 24%;
+  
 }
 
 .card img{
@@ -340,7 +344,7 @@ p {
   }
 
   
-/* 1111111111111111 */
+
 
 .videos h2{
   font-size: 23px;
