@@ -330,6 +330,9 @@ p {
 
 /* games section */
 
+
+
+
 .games-section {
   height: 450px;
   display: grid;
@@ -341,11 +344,17 @@ p {
     rgba(255, 66, 165, 0.03) 0%,
     rgba(255, 66, 165, 0.03) 100%
   );
-  ;
+  align-items: center;
+  justify-content: center;
+ 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .games {
   display: flex;
+  
   align-items: center;
   gap: 10px;
   width: 253px;
@@ -354,7 +363,7 @@ p {
   background: #fff;
   align-items: center;
   padding: 10px;
-  justify-content: center;
+  
   margin-top: 40px;
 }
 
