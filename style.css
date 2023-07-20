@@ -330,15 +330,15 @@ p {
 
 /* games section */
 
-
-
+.game1 {
+  width: 100%;
+}
 
 .games-section {
   height: 450px;
   display: grid;
-  grid-template-columns: repeat(5,1fr);
-  
-  
+  grid-template-columns: repeat(5, 1fr);
+
   background: linear-gradient(
     90deg,
     rgba(255, 66, 165, 0.03) 0%,
@@ -346,15 +346,17 @@ p {
   );
   align-items: center;
   justify-content: center;
- 
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 100px;
+  width: 100%;
 }
 
 .games {
   display: flex;
-  
+
   align-items: center;
   gap: 10px;
   width: 253px;
@@ -363,11 +365,23 @@ p {
   background: #fff;
   align-items: center;
   padding: 10px;
-  
+
   margin-top: 40px;
 }
 
+.games h3 {
+  color: #0b0223;
+  font-family: Work Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
 
+.games img {
+  border-radius: 50px;
+  background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
 
 /* footer section */
 
@@ -583,12 +597,24 @@ footer li {
     text-align: center;
   }
 
-  /* .play-img img{
-    width: 100%;
-  } */
-
   .play-img img {
-    max-width: 70%; /* Scale down the parent image to fit the screen width */
+    max-width: 70%;
+  }
+
+  .games-section {
+    margin-top: 250px;
+    grid-template-columns: repeat(3, 1fr);
+    flex-direction: column;
+    max-width: 1440px;
+  }
+
+  .games img {
+    width: 30px;
+  }
+
+  .games {
+    width: 140px;
+    object-fit: contain;
   }
 
   footer {
